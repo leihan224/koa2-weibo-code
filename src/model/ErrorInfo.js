@@ -3,13 +3,11 @@
  * @author 雷涵
  */
 
-
-
 module.exports = {
-    //用户名已存在
-    registerUserNameExistInfo:{
-        errno:10001,
-        message:'用户已存在'
+    // 用户名已存在
+    registerUserNameExistInfo: {
+        errno: 10001,
+        message: '用户名已存在'
     },
     // 注册失败
     registerFailInfo: {

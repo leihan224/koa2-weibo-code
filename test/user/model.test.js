@@ -1,9 +1,9 @@
 /**
  * @description user model test
- * @author 雷涵
+ * @author 双越老师
  */
 
-const {User} = require('../../src/db/model/index')
+const { User } = require('../../src/db/model/index')
 
 test('User 模型的各个属性，符合预期', () => {
     // build 会构建一个内存的 User 实例，但不会提交到数据库中

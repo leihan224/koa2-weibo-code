@@ -1,10 +1,15 @@
+/**
+ * @description 环境变量
+ * @author 雷涵
+ */
+
 const ENV = process.env.NODE_ENV
 
 module.exports = {
-    isDev: ENV == 'dev',
-    notDev: ENV !=='dev',
-    isPord: ENV === 'production',
+    isDev: ENV === 'dev',
+    notDev: ENV !== 'dev',
+    isProd: ENV === 'production',
     notProd: ENV !== 'production',
-    isTest: ENV == 'test',
-    notTest: ENV !=='test',
+    isTest: ENV === 'test',
+    notTest: ENV !== 'test'
 }

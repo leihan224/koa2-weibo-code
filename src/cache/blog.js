@@ -1,5 +1,7 @@
-
-
+/**
+ * @description 微博缓存层
+ * @author 雷涵
+ */
 
 const { get, set } = require('./_redis')
 const { getBlogListByUser } = require('../services/blog')
@@ -7,6 +9,11 @@ const { getBlogListByUser } = require('../services/blog')
 // redis key 前缀
 const KEY_PREFIX = 'weibo:square:'
 
+/**
+ * 获取广场列表的缓存
+ * @param {number} pageIndex pageIndex
+ * @param {number} pageSize pageSize
+ */
 async function getSquareCacheList(pageIndex, pageSize) {
     const key = `${KEY_PREFIX}${pageIndex}_${pageSize}`
 

@@ -1,7 +1,7 @@
-
-
-
-
+/**
+ * @description user 数据格式校验
+ * @author 雷涵
+ */
 
 const validate = require('./_validate')
 
@@ -46,8 +46,12 @@ const SCHEMA = {
     }
 }
 
-function userValidate(data={}){
-    return validate(SCHEMA,data)
+/**
+ * 校验用户数据格式
+ * @param {Object} data 用户数据
+ */
+function userValidate(data = {}) {
+    return validate(SCHEMA, data)
 }
 
 module.exports = userValidate
